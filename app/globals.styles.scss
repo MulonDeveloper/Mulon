@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// :root {
+//     margin-left: 90px;
+//     margin-right: 90px;
+// }
+
+.secondary {
+    color: $secondary-title;
+}
+
+.primary {
+    color: $primary-title;
+}
+
+// heading
+h1 {
+    font-size: $heading-1;
+    color: $primary-title;
+    font-family: $heading-family;
+    font-weight: $heading-weight;
+
+    .secondary {
+        color: $secondary-title;
+    }
+}
+
+h2 {
+    font-size: $heading-2;
+    color: $black;
+    font-family: $heading-family;
+    font-weight: $heading-weight;
+}
+
+h3 {
+    font-size: $heading-3;
+    color: $black;
+    font-family: $heading-family;
+    font-weight: $heading-weight;
+}
+
+h4 {
+    font-size: $heading-4;
+    color: $black;
+    font-family: $heading-family;
+    font-weight: $heading-weight;
+}
+
+h5 {
+    font-size: $heading-5;
+    color: $black;
+    font-family: $heading-family;
+    font-weight: $heading-weight;
+}
+
+// =================== END HEADING
+
+// Subheading
+.subHeading1 {
+    font-size: $subHeading-1;
+    font-family: $subHeading-family;
+    font-weight: $subHeading-weight;
+}
+
+.subHeading2 {
+    font-size: $subHeading-2;
+    font-family: $subHeading-family;
+    font-weight: $subHeading-weight;
+}
+
+.subHeading3 {
+    font-size: $subHeading-3;
+    font-family: $subHeading-family;
+    font-weight: $subHeading-weight;
+}
+
+// =================== END SUBHEADING
+
+// Body Text
+.bodyText {
+    font-size: $body-1;
+    font-weight: $body-weight;
+    font-family: $body-family;
+    color: $primary-title;
+}
+
+.bodyText2 {
+    font-size: $body-1;
+    font-weight: $body-weight;
+    font-family: $body-family;
+    color: $black;
+}
+
+.captionText {
+    font-size: $caption-1;
+    font-weight: $caption-weight;
+    font-family: $body-family;
+    color: $black;
+}
+
+// =================== END BODY TEXT
+
+// BUTTON
+.primary_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: $green;
+    padding: 20px 35px 20px 35px;
+    border-radius: 40px;
+    color: $white;
+    gap: 10px;
+    fill: #fff;
+    .svgIcons{
+        fill: #fff;
+    }
+}
+
+.secondary_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    outline: $green solid 1px;
+    padding: 20px 35px 20px 35px;
+    border-radius: 40px;
+    color: $green;
+    gap: 10px;
+  
+    .svgIcons{
+       fill: $green;
+    }
+}
+
+.lh{
+    line-height: 100%;
+}
+
+
+// hero background
+
+
+.mainHero {
+  
+    position: relative;
+    background: rgb(165, 231, 199);
+    background: linear-gradient(38deg, rgba(165, 231, 199, 1) 0%, rgba(211, 232, 177, 1) 100%);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    .earthSVG {
+        position: absolute;
+        right: -80px;
+        bottom: -100px;
+        object-fit: contain;
+        z-index: -1;
+
+    }
+
+    .heroWrapper {
+        margin-left: 90px;
+        margin-right: 90px;
+        width: 562px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        h1 {
+            z-index: 99;
+        }
+    }
+
+
+}
