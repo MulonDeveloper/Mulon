@@ -26,7 +26,7 @@ h1 {
     color: $primary-title;
     font-family: $heading-family;
     font-weight: $heading-weight;
-
+    line-height: 100%;
     .secondary {
         color: $secondary-title;
     }
@@ -220,22 +220,36 @@ h5 {
     background-position-y: -100px;
     height: 600px;
     width: 100%;
-    display: flex;
-    align-items: center;
+    display: grid;
+    place-items: center;
+
     &__wrapper {
-        height: 400px;
-        margin-left: 90px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
+        justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        gap: 50px;
-        .LContent{
-            width: 60%;
+        gap: 30px;
+        text-align: center;
+        .LContent {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 8px;
+            gap: 10px;
+            .primary_button{
+                margin-top: 20px;
+            }
         }
-        .RContent{
-            .logoMulon{
+
+        .RContent {
+            width: 10%;
+
+            .logoMulon {
                 object-fit: contain;
+
             }
         }
     }
@@ -253,6 +267,26 @@ h5 {
 
         h1 {
             font-size: $heading-3;
+        }
+
+    }
+
+
+    .about {
+
+        &__wrapper {
+            .LContent {
+                h1{
+                    font-size: $heading-2;
+                }
+                p{
+                    font-size: $body-2;
+                }
+            }
+
+            .RContent {}
+
+           
         }
 
     }

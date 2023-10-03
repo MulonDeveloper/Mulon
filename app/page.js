@@ -32,19 +32,32 @@ export default function Home() {
         <div className="about__wrapper">
           <div className="LContent">
             <h1>Tentang <span className='secondary'>Kami</span></h1>
-            <p className='bodyText max-w-xl'>
+            <p className='bodyText '>
               Mulon adalah Startup Teknologi yang bergerak pada layanan lingkungan dan sosial, kami hadir sebagai bentuk pendekatan baru bagi masyarakat kupang khususnya dalam mengatasi masalah sampah dengan pemanfaatan teknologi.
             </p>
+            <button className='primary_button'>Lihat Lebih Detail</button>
           </div>
           <div className="RContent">
             <Image
-              src={'/MulonAtas.png'}
+              src={'/Mulon.png'}
               alt='Mulon Logo'
               className='logoMulon'
-              width={300}
-              height={200}
+              width={450}
+              height={450}
             />
           </div>
+        </div>
+      </div>
+
+      <div className="service">
+        <div className="textAbove">
+          <h1>Layanan <span className='secondary'>Kami</span></h1>
+          <p className='bodyText'>
+            Kami berkomitmen untuk menyediakan solusi lingkungan yang canggih. Layanan unggulan kami menggabungkan kemudahan pengelolaan sampah, teknologi Internet of Things yang paling canggih, dan pemberdayaan komunitas untuk menciptakan perubahan yang bermanfaat bagi lingkungan.
+          </p>
+        </div>
+        <div className="service__wrap">
+
         </div>
       </div>
     </>
