@@ -55,8 +55,10 @@ export default function Home() {
           </p>
         </div>
         <div className="service__wrap">
+          <CardServices />
+          <CardServices />
+          <CardServices />
         </div>
-        <CardServices/>
       </div>
     </>
   )

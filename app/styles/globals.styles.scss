@@ -275,6 +275,14 @@ h5 {
         flex-direction: column;
         gap: 20px;
     }
+
+    &__wrap{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 90px;
+        flex-wrap: wrap;
+    }
 }
 
 // Responsive
