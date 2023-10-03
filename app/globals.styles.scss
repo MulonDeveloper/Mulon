@@ -8,10 +8,9 @@
     box-sizing: border-box;
 }
 
-// :root {
-//     margin-left: 90px;
-//     margin-right: 90px;
-// }
+:root {
+    background-color: $background;
+}
 
 .secondary {
     color: $secondary-title;
@@ -116,12 +115,13 @@ h5 {
     align-items: center;
     width: auto;
     background-color: $green;
-    padding: 20px 35px 20px 35px;
+    padding: 15px 35px 15px 35px;
     border-radius: 40px;
     color: $white;
     gap: 10px;
     fill: #fff;
-    .svgIcons{
+
+    .svgIcons {
         fill: #fff;
     }
 }
@@ -133,17 +133,17 @@ h5 {
     align-items: center;
     width: auto;
     outline: $green solid 1px;
-    padding: 20px 35px 20px 35px;
+    padding: 15px 35px 15px 35px;
     border-radius: 40px;
     color: $green;
     gap: 10px;
-  
-    .svgIcons{
-       fill: $green;
+
+    .svgIcons {
+        fill: $green;
     }
 }
 
-.lh{
+.lh {
     line-height: 100%;
 }
 
@@ -152,27 +152,28 @@ h5 {
 
 
 .mainHero {
-  
     position: relative;
     background: rgb(165, 231, 199);
     background: linear-gradient(38deg, rgba(165, 231, 199, 1) 0%, rgba(211, 232, 177, 1) 100%);
     position: relative;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+
     z-index: 0;
     display: flex;
     justify-items: center;
     justify-content: flex-start;
     align-items: center;
+    overflow: hidden;
 
     .earthSVG {
+        content: "";
         position: absolute;
         right: -80px;
         bottom: -100px;
         object-fit: contain;
         z-index: -1;
-
+        overflow: hidden;
     }
 
     .heroWrapper {
@@ -187,6 +188,90 @@ h5 {
             z-index: 99;
         }
     }
+}
+
+// =========END HERO
+
+// BLOCK
+
+.block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: $white;
+    background-color: $green;
+
+    p {
+        text-align: center;
+        color: $white;
+        font-size: $body-2;
+    }
+}
+
+// ======= Block End
+
+// About
+.about {
+    background-image: url('/asset/Background/TopBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    &__wrapper {
+        height: 400px;
+        margin-left: 90px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        .LContent{
+            width: 60%;
+        }
+        .RContent{
+            .logoMulon{
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+// Responsive
+
+@media screen and (max-width: 720px) {
+    .mainHero {
+        .heroWrapper {
+            margin-left: 40px;
+            margin-right: 20px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: $heading-3;
+        }
+
+    }
+}
 
 
+@media screen and (max-width: 512px) {
+    .mainHero {
+        .heroWrapper {
+            margin-left: 20px;
+        }
+
+        .bodyText {
+            font-size: $body-2;
+        }
+
+        h1 {
+            font-size: $heading-4;
+        }
+
+    }
 }
