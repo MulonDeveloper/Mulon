@@ -27,6 +27,7 @@ h1 {
     font-family: $heading-family;
     font-weight: $heading-weight;
     line-height: 100%;
+
     .secondary {
         color: $secondary-title;
     }
@@ -230,6 +231,7 @@ h5 {
         align-items: center;
         gap: 30px;
         text-align: center;
+
         .LContent {
             width: 80%;
             margin: auto;
@@ -239,7 +241,8 @@ h5 {
             flex-direction: column;
             margin: 8px;
             gap: 10px;
-            .primary_button{
+
+            .primary_button {
                 margin-top: 20px;
             }
         }
@@ -252,6 +255,25 @@ h5 {
 
             }
         }
+    }
+}
+
+// ======= END ABOUT
+
+// SERVICES
+.service {
+    height: 100vh;
+    background-image: url('/asset/eclips.svg');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+
+    .textAbove{
+        margin-left: 90px;
+        max-width: 814px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -276,17 +298,18 @@ h5 {
 
         &__wrapper {
             .LContent {
-                h1{
+                h1 {
                     font-size: $heading-2;
                 }
-                p{
+
+                p {
                     font-size: $body-2;
                 }
             }
 
             .RContent {}
 
-           
+
         }
 
     }

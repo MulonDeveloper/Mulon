@@ -1,8 +1,6 @@
 import Image from 'next/image'
-import Navbar from '@/components/Navigation/navbar'
-import MainHero from '@/components/Hero/main'
-
-
+import styles from './styles/home.module.scss'
+import CardServices from './components/CardServices'
 export default function Home() {
   return (
     <>
@@ -57,8 +55,8 @@ export default function Home() {
           </p>
         </div>
         <div className="service__wrap">
-
         </div>
+        <CardServices/>
       </div>
     </>
   )
