@@ -262,7 +262,7 @@ h5 {
 
 // SERVICES
 .service {
-    min-height: 100vh;
+    min-height: 80vh;
     max-height: max-content;
     background-image: url('/asset/eclips.svg');
     background-repeat: no-repeat;
@@ -289,7 +289,9 @@ h5 {
 
     @media screen and (max-width: 720px) {
         .textAbove {
-            margin-left: 40px;
+            padding: 20px;
+            margin-left: 0px;
+
 
             h1 {
                 font-size: $heading-3;
@@ -304,12 +306,29 @@ h5 {
         }
 
     }
+
+    @media screen and (max-width: 512px) {
+        .textAbove {
+          
+        }
+
+        h1 {
+            font-size: $heading-4;
+        }
+
+        .bodyText {
+            font-size: $body-2;
+        }
+
+
+    }
 }
 
 // Promo Section
 
 .promo {
     display: grid;
+    margin-top: 50px;
     grid-template-columns: 1fr 1fr;
     place-items: center;
     background-image: url('/asset/rightCircle.svg');
@@ -369,7 +388,7 @@ h5 {
 
 // Blog Section
 
-.blog{
+.blog {
     width: 100%;
     height: 100vh;
     background-image: url('/asset/Background/bottomBg.png');
