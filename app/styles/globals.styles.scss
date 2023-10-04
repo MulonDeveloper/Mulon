@@ -262,13 +262,14 @@ h5 {
 
 // SERVICES
 .service {
-    height: 100vh;
+    min-height: 100vh;
+    max-height: max-content;
     background-image: url('/asset/eclips.svg');
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: top;
 
-    .textAbove{
+    .textAbove {
         margin-left: 90px;
         max-width: 814px;
         display: flex;
@@ -276,7 +277,7 @@ h5 {
         gap: 20px;
     }
 
-    &__wrap{
+    &__wrap {
         margin-top: 20px;
         display: flex;
         flex-direction: row;
@@ -287,19 +288,97 @@ h5 {
     }
 
     @media screen and (max-width: 720px) {
-        .textAbove{
+        .textAbove {
             margin-left: 40px;
+
             h1 {
                 font-size: $heading-3;
             }
         }
-        &__wrap{
-            margin-left: 40px;
+
+        &__wrap {
+            margin-left: 0;
+            padding: 20px;
             zoom: 80%;
             align-items: center;
         }
 
     }
+}
+
+// Promo Section
+
+.promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-image: url('/asset/rightCircle.svg');
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    margin-left: 90px;
+    gap: 20px;
+
+    &__left {
+        width: 550px;
+    }
+
+    &__right {
+        margin-right: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .url {
+            color: #4285F4;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 1114px) {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        padding: 20px;
+
+        &__left {
+            width: 80%;
+            display: grid;
+            place-items: center;
+            margin: auto;
+        }
+
+        &__right {
+            margin-right: 0;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        &__right {
+            margin-right: 0;
+            text-align: center;
+
+            h1 {
+                font-size: $heading-2;
+            }
+        }
+    }
+
+
+}
+
+// Blog Section
+
+.blog{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/asset/Background/bottomBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
 // Responsive

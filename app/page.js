@@ -61,7 +61,34 @@ export default function Home() {
         </div>
       </div>
 
-      .
+      <div className="promo">
+        <div className="promo__left">
+          <Image
+            src={"/asset/gambar1.png"}
+            alt='illustrasi gambar'
+            width={560}
+            height={476}
+          />
+        </div>
+
+        <div className="promo__right">
+          <h1>Daftar Sekarang Dapat Banyak <span className='secondary'>Benefit</span></h1>
+          <p className='bodyText'>
+            Daftar sekarang dan dapatkan banyak potongan harga pengangkutan sampah sampai dengan 50% khusus daerah Kupang, <span className='url'>Lihat Selengkapnya Disini</span>
+          </p>
+          <button className='primary_button'>Daftar Sekarang</button>
+        </div>
+
+      </div>
+
+      <div className="blog">
+        <h1>Tulisan <span className='secondary'>Kami</span></h1>
+        <div className="blog__wrapper">
+
+        </div>
+
+        <button className='primary_button'>Lihat Blog Kami</button>
+      </div>
     </>
   )
 }
