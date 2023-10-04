@@ -1,3 +1,80 @@
-.red{
-    color: red;
+.footer {
+    background-color: #1A6652;
+    background-image: url('/asset/footerCircle.png');
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+
+    &__container {
+        padding: 40px;
+        margin-left: 90px;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        gap: 90px;
+        place-items: center;
+    }
+
+    &__logo {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+        color: $white;
+    }
+
+    &__copy {
+        height: 90px;
+        margin: auto;
+        display: grid;
+        text-align: center;
+        place-items: center;
+
+        p {
+            color: $white;
+        }
+    }
+
+    @media screen and (max-width :  800px) {
+        &__container {
+            margin-left: 0;
+            grid-template-columns: 1fr;
+            height: max-content;
+        }
+        &__logo {
+            display: none;
+        }
+
+        &__wrap {
+          flex-wrap: wrap;
+          justify-content: flex-start;
+        }
+    }
+}
+
+.items {
+
+    p {
+        font-family: $body-family;
+    }
+
+    &__list {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__social {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
 }

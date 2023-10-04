@@ -1,11 +1,66 @@
 import React from 'react'
 import styles from './style.module.scss'
-
+import Image from 'next/image'
 export const Footer = () => {
-  return (
-    <>
-    <div className={styles.red}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quo accusantium excepturi deserunt odit explicabo reiciendis sequi earum officia quas?</div>
-    
-    </>
-  )
+    return (
+        <>
+            <footer>
+                <div className={styles.footer}>
+                    <div className={styles.footer__container}>
+                        <div className={styles.footer__logo}>
+                            <Image
+                                src={"/mulonPutih.png"}
+                                width={350}
+                                height={270}
+                                alt='mulon logo'
+                            />
+                        </div>
+
+                        <div className={styles.footer__wrap}>
+                            <div className={styles.items}>
+                                <h5 className=' text-white'>Home</h5>
+                                <div className={styles.items__list}>
+                                    <p>Home</p>
+                                    <p>About Us</p>
+                                    <p>Services</p>
+                                </div>
+                            </div>
+                            <div className={styles.items}>
+                                <h5 className=' text-white'>Activity</h5>
+                                <div className={styles.items__list}>
+                                    <p>Our Team</p>
+                                    <p>Partner With Us</p>
+                                    <p>FAQ</p>
+                                    <p>Developer Portal</p>
+                                </div>
+                            </div>
+                            <div className={styles.items}>
+                                <h5 className=' text-white'>Support</h5>
+                                <div className={styles.items__list}>
+                                    <p>Account</p>
+                                    <p>Support Center</p>
+                                    <p>Feedback</p>
+                                    <p>Contact Us</p>
+                                </div>
+                            </div>
+                            <div className={styles.items}>
+                                <h5 className=' text-white'>Social Media</h5>
+                                <div className={styles.items__social}>
+                                    <p>A</p>
+                                    <p>B</p>
+                                    <p>C</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className={styles.footer__copy}>
+                       
+                        <p>© 2023 Mulon. Copyright and All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </>
+    )
 }
