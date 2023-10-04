@@ -1,4 +1,5 @@
-.card{
+.card {
+    zoom: 90%;
     width: 383px;
     height: 391px;
     border: 1px solid #D8D8DA;
@@ -8,14 +9,45 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    &__iconBg{
-     
-        img{
-        padding: 2px;
-         width: 80px;
-         height: 80px;
-         border-radius: 50%;
-         background-color: $green;
+
+    &__param{
+        text-align: center;
+        :hover{
+            color: #ffff;
         }
+    }
+
+    &__iconBg {
+        background-color: $green;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        padding: 2px;
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            top: 23px;
+            right: 23px;
+        }
+
+       
+    }
+}
+
+.card:hover{
+    background-color: rgba(84, 155, 121, 0.5);
+    color: #ffff;
+    h4{
+        color: #ffff;
+
+    }
+    p{
+        color: #D8D8DA;
+    }
+    &__param{
+        text-align: center;
+        color: #ffff;
     }
 }

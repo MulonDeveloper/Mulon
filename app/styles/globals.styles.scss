@@ -277,11 +277,28 @@ h5 {
     }
 
     &__wrap{
+        margin-top: 20px;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 10px;
         margin-left: 90px;
         flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 720px) {
+        .textAbove{
+            margin-left: 40px;
+            h1 {
+                font-size: $heading-3;
+            }
+        }
+        &__wrap{
+            margin-left: 40px;
+            zoom: 80%;
+            align-items: center;
+        }
+
     }
 }
 

@@ -1,21 +1,27 @@
 import React from 'react'
 import styles from '../styles/home.module.scss'
+import Link from 'next/link'
 
 
-const CardServices = () => {
+const CardServices = ({ title, param, img, link }) => {
     return (
         <>
 
-        <div className={styles.card}>
-            <div className={styles.card__iconBg}>
-                <img src="../../../asset/icons/motor.svg" alt="" />
+            <div className={styles.card}>
+                <div className={styles.card__iconBg}>
+                    <img src={`../../../asset/icons/${img}.svg`} alt="" />
+                </div>
+
+                <div className={styles.card__param}>
+                    <h4>{title}</h4>
+
+                    <p className='bodyText text-center mx-4'>{param}</p>
+
+                </div>
+                <Link href="#">
+                    <button className='primary_button'>Selengkapnya</button>
+                </Link>
             </div>
-            <h3>Lorem Ipsum</h3>
-
-            <p className='bodyText text-center mx-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, magnam! Nisi sapiente commodi quod doloremque unde inventore aperiam dicta veritatis.</p>
-
-            <button className='primary_button'>Selengkapnya</button>
-        </div>
         </>
     )
 }
