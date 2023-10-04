@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import styles from './styles/home.module.scss'
 import CardServices from './components/CardServices'
+import { Footer } from './components/footers/footer'
 export default function Home() {
   return (
     <>
@@ -89,6 +89,8 @@ export default function Home() {
 
         <button className='primary_button'>Lihat Blog Kami</button>
       </div>
+
+      <Footer/>
     </>
   )
 }
