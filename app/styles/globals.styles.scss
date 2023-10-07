@@ -157,7 +157,7 @@ h5 {
     background: rgb(165, 231, 199);
     background: linear-gradient(38deg, rgba(165, 231, 199, 1) 0%, rgba(211, 232, 177, 1) 100%);
     position: relative;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
 
     z-index: 0;
@@ -400,6 +400,12 @@ h5 {
     text-align: center;
 }
 
+// NAVBAR
+
+nav{
+    position: relative;
+    bottom: 0;
+}
 // Responsive
 
 @media screen and (max-width: 720px) {

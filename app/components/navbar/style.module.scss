@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    z-index: 99;
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    color: $white;
+    height: 60px;
+
+    &.scrolled {
+        top: 0;
+        background-color: $green;
+        ul{
+            color: $white;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 60px;
+        color: $black;
+        font-family: $body-family;
+    }
+}
