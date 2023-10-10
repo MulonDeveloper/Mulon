@@ -57,9 +57,10 @@ export default function Home() {
           </p>
         </div>
         <div className="service__wrap">
-          <CardServices />
-          <CardServices />
-          <CardServices />
+        
+          <CardServices title={"Penjemputan Sampah"} param={"Layanan utama kami adalah jasa penjemputan sampah, Kami hadir untuk melayani dan menjadwalkan penjemputan sampah di rumah anda. "} img={"truck"} />
+          <CardServices title={"Pengembangan Produk IOT"} param={"Menggunakan Teknologi Internet Of Things yang menjadi inovasi terbaru kami dalam mengelola sampah agar menjadi jauh lebih efisien."} img={"iot"}/>
+          <CardServices title={"Pemberdayaan Masyarakat"} param={"Kami akan memberikan edukasi dan sumber daya kepada masyarakat untuk dapat berperan aktif dalam menjaga kebersihan dan keberlanjutan lingkungan."} img={"community"}/>
         </div>
       </div>
 
@@ -74,11 +75,11 @@ export default function Home() {
         </div>
 
         <div className="promo__right">
-          <h1>Daftar Sekarang Dapat Banyak <span className='secondary'>Benefit</span></h1>
+          <h1>Hubungi kami sekarang dan dapatkan banyak <span className='secondary'> Promo Menarik</span></h1>
           <p className='bodyText'>
-            Daftar sekarang dan dapatkan banyak potongan harga pengangkutan sampah sampai dengan 50% khusus daerah Kupang, <span className='url'>Lihat Selengkapnya Disini</span>
+            Hubungi Kami sekarang dan dapatkan banyak potongan harga pengangkutan sampah sampai dengan 50% khusus daerah Kupang
           </p>
-          <button className='primary_button'>Daftar Sekarang</button>
+          <button className='primary_button'>Hubungi Kami Sekarang</button>
         </div>
 
       </div>

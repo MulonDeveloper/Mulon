@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/home.module.scss'
+import styles from './style.module.scss'
 import Link from 'next/link'
 
 
@@ -18,9 +18,9 @@ const CardServices = ({ title, param, img, link }) => {
                     <p className='bodyText text-center mx-4'>{param}</p>
 
                 </div>
-                <Link href="#">
+                {/* <Link href="#">
                     <button className='primary_button'>Selengkapnya</button>
-                </Link>
+                </Link> */}
             </div>
         </>
     )

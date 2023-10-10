@@ -9,7 +9,7 @@ export const Footer = () => {
                     <div className={styles.footer__container}>
                         <div className={styles.footer__logo}>
                             <Image
-                                src={"/mulonPutih.png"}
+                                src={"/mulonPutih.svg"}
                                 width={350}
                                 height={270}
                                 alt='mulon logo'
@@ -46,17 +46,28 @@ export const Footer = () => {
                             <div className={styles.items}>
                                 <h5 className=' text-white'>Social Media</h5>
                                 <div className={styles.items__social}>
-                                    <p>A</p>
-                                    <p>B</p>
-                                    <p>C</p>
-                                   
+                                    <Image
+                                        src={"/asset/icons/Instagram.svg"}
+                                        width={30}
+                                        height={30}
+                                        alt='mulon logo'
+                                        className={styles.iconsControl}
+                                    />
+                                    <Image
+                                        className={styles.iconsControl}
+                                        src={"/asset/icons/Facebook.svg"}
+                                        width={30}
+                                        height={30}
+                                        alt='mulon logo'
+                                    />
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr />
                     <div className={styles.footer__copy}>
-                       
+
                         <p>© 2023 Mulon. Copyright and All rights reserved.</p>
                     </div>
                 </div>

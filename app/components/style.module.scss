@@ -1,3 +1,35 @@
-.test{
-    background-color: aquamarine;
+.card {
+    zoom: 90%;
+    width: 383px;
+    height: 391px;
+    border: 1px solid #D8D8DA;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &__param{
+        text-align: center;
+        :hover{
+            color: #ffff;
+        }
+    }
+}
+
+.card:hover{
+    background-color: rgba(84, 155, 121, 0.5);
+    color: #ffff;
+    h4{
+        color: #ffff;
+
+    }
+    p{
+        color: #ffff;
+    }
+    &__param{
+        text-align: center;
+        color: #ffff;
+    }
 }

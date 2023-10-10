@@ -1,0 +1,44 @@
+.about {
+    background-image: url('/asset/Background/TopBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+    height: 110vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+
+        .LContent {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 8px;
+            gap: 10px;
+
+            .primary_button {
+                margin-top: 20px;
+            }
+        }
+
+        .RContent {
+            width: 10%;
+
+            .logoMulon {
+                object-fit: contain;
+
+            }
+        }
+    }
+}
+

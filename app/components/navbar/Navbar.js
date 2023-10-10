@@ -4,10 +4,11 @@ import styles from './style.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import logoPutih from '../../../public/mulonPutih.svg';
+import logoHitam from '../../../public/mulonSamping.png';
 
 export const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
-
     useEffect(() => {
         // Fungsi untuk mengatur state scrolled berdasarkan posisi scroll
         const handleScroll = () => {
@@ -28,6 +29,7 @@ export const Navbar = () => {
     }, [scrolled]);
 
     // Tambahkan kelas CSS berdasarkan nilai state scrolled
+    const logoSrc = scrolled ? logoPutih : logoHitam;
     const navbar = scrolled ? `${styles.navbar} ${styles.scrolled}` : styles.navbar;
     return (
         <>
@@ -36,12 +38,14 @@ export const Navbar = () => {
                 <div className={navbar}>
 
                     <div className={styles.navLogo}>
+                        <Link href={'/'}>
                         <Image
-                            src='/MulonSamping.png'
+                            src={logoSrc}
                             alt='Mulon Logo'
                             width={100}
                             height={33}
                         />
+                        </Link>
 
                     </div>
 
@@ -49,13 +53,13 @@ export const Navbar = () => {
                         <div className={styles.navbar__items}>
                             <ul>
                                 <li>
-                                    <Link href="#">
-                                        About
+                                    <Link href="/">
+                                        Home
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="#">
-                                        Services
+                                        Angkut Sampah
                                     </Link>
                                 </li>
                                 <li>
@@ -69,12 +73,12 @@ export const Navbar = () => {
                                     </Link>
 
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link href="#">
                                         Partnership
                                     </Link>
 
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
