@@ -2,6 +2,12 @@ import Image from 'next/image'
 import CardServices from './components/CardServices'
 import { Footer } from './components/footers/footer'
 import Navbar from './components/navbar/Navbar'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 export default function Home() {
   return (
     <>
@@ -83,7 +89,14 @@ export default function Home() {
         </div>
 
       </div>
-
+   <Accordion type="single" collapsible>
+                <AccordionItem value="item-1">
+                    <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                    <AccordionContent>
+                        Yes. It adheres to the WAI-ARIA design pattern.
+                    </AccordionContent>
+                </AccordionItem>
+            </Accordion>
       <div className="blog">
         <h1>Tulisan <span className='secondary'>Kami</span></h1>
         <div className="blog__wrapper">

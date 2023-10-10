@@ -4,6 +4,12 @@ import { Footer } from '@/app/components/footers/footer'
 import Image from 'next/image'
 import CardServices from '@/app/components/CardServices'
 import styles from './style.module.scss'
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion"
 
 const About = () => {
     return (
@@ -43,6 +49,7 @@ const About = () => {
                 </div>
             </div>
 
+         
             <div className="blog">
                 <h1>Tulisan <span className='secondary'>Kami</span></h1>
                 <div className="blog__wrapper">
