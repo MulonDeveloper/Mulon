@@ -15,7 +15,7 @@ const CardServices = ({ title, param, img, link }) => {
                 <div className={styles.card__param}>
                     <h4>{title}</h4>
 
-                    <p className='bodyText text-center mx-4'>{param}</p>
+                    <p className={styles.card__text}>{param}</p>
 
                 </div>
                 {/* <Link href="#">

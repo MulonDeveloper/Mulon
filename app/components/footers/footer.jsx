@@ -18,7 +18,7 @@ export const Footer = () => {
 
                         <div className={styles.footer__wrap}>
                             <div className={styles.items}>
-                                <h5 className=' text-white'>Home</h5>
+                                <h5 className={styles.whiteColor}>Home</h5>
                                 <div className={styles.items__list}>
                                     <p>Home</p>
                                     <p>About Us</p>
@@ -26,7 +26,7 @@ export const Footer = () => {
                                 </div>
                             </div>
                             <div className={styles.items}>
-                                <h5 className=' text-white'>Activity</h5>
+                                <h5 className={styles.whiteColor}>Activity</h5>
                                 <div className={styles.items__list}>
                                     <p>Our Team</p>
                                     <p>Partner With Us</p>
@@ -35,7 +35,7 @@ export const Footer = () => {
                                 </div>
                             </div>
                             <div className={styles.items}>
-                                <h5 className=' text-white'>Support</h5>
+                                <h5 className={styles.whiteColor}>Support</h5>
                                 <div className={styles.items__list}>
                                     <p>Account</p>
                                     <p>Support Center</p>
@@ -44,7 +44,7 @@ export const Footer = () => {
                                 </div>
                             </div>
                             <div className={styles.items}>
-                                <h5 className=' text-white'>Social Media</h5>
+                                <h5 className={styles.whiteColor}>Social Media</h5>
                                 <div className={styles.items__social}>
                                     <Image
                                         src={"/asset/icons/Instagram.svg"}

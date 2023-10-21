@@ -16,8 +16,8 @@ export default function Home() {
       <div className='mainHero'>
         <div className="heroWrapper">
           <h1 className=' lh'>Solusi Modern Untuk Kupang Yang <span className='secondary'>Bersih</span></h1>
-          <div className="bodyText mt-3 ml-1 max-w-md">Angkut Sampah Tidak Pernah Semudah ini. Jadilah Patner dan bergabung berasama kami, ciptakan kupang yang lebih bersih dan sehat dimulai dari anda.</div>
-          <div className="buttonWrap flex flex-wrap flex-row gap-5 justify-start mt-5">
+          <div className="bodyText paramMt">Angkut Sampah Tidak Pernah Semudah ini. Jadilah Patner dan bergabung berasama kami, ciptakan kupang yang lebih bersih dan sehat dimulai dari anda.</div>
+          <div className="buttonWrap paramMt flex flex-wrap flex-row gap-5 justify-start mt-5">
             <button className='primary_button'>Hubungi Kami Sekarang <span><Image src={'../asset/icons/Right.svg'} alt='arrow right' width={14} height={14} className='svgIcons' /></span></button>
             <button className='secondary_button'>Daftar <span><Image src={'../asset/icons/ArrowOb.svg'} alt='arrow right' width={14} height={14} className='svgIcons' /></span></button>
           </div>
@@ -89,14 +89,6 @@ export default function Home() {
         </div>
 
       </div>
-   <Accordion type="single" collapsible>
-                <AccordionItem value="item-1">
-                    <AccordionTrigger>Is it accessible?</AccordionTrigger>
-                    <AccordionContent>
-                        Yes. It adheres to the WAI-ARIA design pattern.
-                    </AccordionContent>
-                </AccordionItem>
-            </Accordion>
       <div className="blog">
         <h1>Tulisan <span className='secondary'>Kami</span></h1>
         <div className="blog__wrapper">

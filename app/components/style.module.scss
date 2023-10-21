@@ -9,12 +9,19 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    color: $black;
 
     &__param{
         text-align: center;
+        color: $black;
         :hover{
             color: #ffff;
         }
+    }
+
+    &__text{
+        margin: 2px;
+        padding: 8px;
     }
 }
 
