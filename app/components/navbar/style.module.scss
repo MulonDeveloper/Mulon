@@ -12,7 +12,31 @@
     min-height: max-content;
     height: max-content;
     padding: 20px;
-  
+
+    .options {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    .nestedLi {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nestedUL {
+        position: absolute;
+        background-color: #549b79;
+        padding: 20px;
+        width: max-content;
+        top: 30px;
+        border-radius: 4px;
+        display: none;
+
+    }
 
 
     .wrapLogo {
@@ -29,103 +53,67 @@
         gap: 60px;
     }
 
-    .navLogo{
+    .navLogo {
         width: 100px;
-       
+
+    }
+
+    .hamburgerPlace {
+        display: none;
     }
 
 }
 
+.active {
+    display: block;
+}
+
 @media (max-width: 768px) {
     .navbar {
-      position: fixed; /* Membuat navbar tetap di atas halaman pada tampilan mobile */
-      top: 0;
-      left: 0;
+
+        /* Membuat navbar tetap di atas halaman pada tampilan mobile */
+        top: 0;
+        left: 0;
+        background-color: #549b79;
+
+        .navbar__items {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background-color: #549b79;
+            height: max-content;
+            gap: 20px;
+            li {
+                padding: 10px;
+                margin-left: 12px;
+
+            }
+
+        }
+
+        .none{
+            display: none;
+        }
+        .active {
+            display: inline;
+        }
+
+        .nestedUL {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            padding: 7px;
+            top: 0;
+        }
+
+        .hamburgerPlace {
+            position: absolute;
+            right: 30px;
+            display: flex;
+        }
     }
-  }
-
-// .navbar {
-
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 20px;
-//     z-index: 99;
-//     position: fixed;
-//     top: 20px;
-//     width: 100%;
-//     // color: $white;
-//     min-height: max-content;
-//     height: max-content;
-//     padding: 20px;
-
-//     .wrapLogo {
-//         width: 80%;
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
-//         align-items: center;
-//     }
-
-//     .navbar__items {
-//         min-width: 30%;
-//         width: 50%;
-//         height: 100vh;
-//         position: absolute;
-//         top: -20px;
-//         right: 0;
-//         padding: 10px;
-//         background-color: $green;
-
-//         display: flex;
-//         flex-direction: column;
-//         gap: 10px;
-
-//         li{
-//             margin: 4px;
-//             padding: 10px;
-//             &:first-child{
-//                 background-color: $green-dark;
-//                 border-radius: 50px;
-//             }
-//            a{
-//             display: flex;
-//             width: 80%;
-//             height: 30px;
-//            }
-//         }
-//     }
-
-// //     .hamburgerPlace {
-// //         svg {
-// //             width: 30px;
-// //             height: 30px;
-// //             fill: $black;
-// //         }
-// //     }
-
-// //     &.scrolled {
-// //         top: 0px;
-// //         background-color: $green;
-
-// //         ul {
-// //             color: $white;
-// //         }
-
-// //         .hamburgerPlace {
-// //             svg {
-// //                 width: 30px;
-// //                 height: 30px;
-// //                 fill: $white;
-// //             }
-// //         }
-
-// //         .navbar__items {
-
-// //             top: 70px;
-
-// //         }
-// //     }
-// // }
-// }
+}
