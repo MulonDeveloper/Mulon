@@ -155,6 +155,10 @@ h5 {
     font-weight: $body-weight;
     font-family: $body-family;
     color: $primary-title;
+
+    @media screen and (max-width: 620px) {
+        font-size: 10px;
+    }
 }
 
 .bodyText2 {

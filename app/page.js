@@ -2,6 +2,7 @@ import Image from 'next/image'
 import CardServices from './components/CardServices'
 import { Footer } from './components/footers/footer'
 import Navbar from './components/navbar/Navbar'
+import Link from 'next/link'
 import {
   Accordion,
   AccordionContent,
@@ -12,7 +13,7 @@ export default function Home() {
   return (
     <>
 
-    <Navbar />
+      <Navbar />
       <div className='mainHero'>
         <div className="heroWrapper">
           <h1 className=' lh'>Solusi Modern Untuk Kupang Yang <span className='secondary'>Bersih</span></h1>
@@ -31,7 +32,7 @@ export default function Home() {
       </div>
 
       <div className="block">
-        <p className='bodyText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, enim?</p>
+        <p className='bodyText'>Cara Baru Atasi Sampah Dengan Smart Waste Management Kami</p>
       </div>
 
       <div className="about">
@@ -41,7 +42,9 @@ export default function Home() {
             <p className='bodyText '>
               Mulon adalah Startup Teknologi yang bergerak pada layanan lingkungan dan sosial, kami hadir sebagai bentuk pendekatan baru bagi masyarakat kupang khususnya dalam mengatasi masalah sampah dengan pemanfaatan teknologi.
             </p>
-            <button className='primary_button'>Lihat Lebih Detail</button>
+            <Link href='/home/about'>
+              <button className='primary_button'>Lihat Lebih Detail</button>
+            </Link>
           </div>
           <div className="RContent">
             <Image
@@ -63,10 +66,10 @@ export default function Home() {
           </p>
         </div>
         <div className="service__wrap">
-        
+
           <CardServices title={"Penjemputan Sampah"} param={"Layanan utama kami adalah jasa penjemputan sampah, Kami hadir untuk melayani dan menjadwalkan penjemputan sampah di rumah anda. "} img={"truck"} />
-          <CardServices title={"Pengembangan Produk IOT"} param={"Menggunakan Teknologi Internet Of Things yang menjadi inovasi terbaru kami dalam mengelola sampah agar menjadi jauh lebih efisien."} img={"iot"}/>
-          <CardServices title={"Pemberdayaan Masyarakat"} param={"Kami akan memberikan edukasi dan sumber daya kepada masyarakat untuk dapat berperan aktif dalam menjaga kebersihan dan keberlanjutan lingkungan."} img={"community"}/>
+          <CardServices title={"Pengembangan Produk IOT"} param={"Menggunakan Teknologi Internet Of Things yang menjadi inovasi terbaru kami dalam mengelola sampah agar menjadi jauh lebih efisien."} img={"iot"} />
+          <CardServices title={"Pemberdayaan Masyarakat"} param={"Kami akan memberikan edukasi dan sumber daya kepada masyarakat untuk dapat berperan aktif dalam menjaga kebersihan dan keberlanjutan lingkungan."} img={"community"} />
         </div>
       </div>
 
@@ -98,7 +101,7 @@ export default function Home() {
         <button className='primary_button'>Lihat Blog Kami</button>
       </div>
 
-      <Footer/>
+      <Footer />
     </>
   )
 }

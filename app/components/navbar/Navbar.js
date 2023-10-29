@@ -15,10 +15,12 @@ export const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [prevScrollY, setPrevScrollY] = useState(0);
     const controls = useAnimation();
-
+    const initialPosition = scrolled ? -22 : +20;
+    
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
+
 
             if (currentScrollY > 5 && !scrolled) {
                 setScrolled(true);
@@ -36,10 +38,10 @@ export const Navbar = () => {
             const isMobileView = window.matchMedia('(max-width: 768px)').matches;
 
             if (isMobileView) {
-              // You can set specific styles for mobile view here
-              controls.start({ y: 0 });
+                // You can set specific styles for mobile view here
+                controls.start({ y: 0 });
             } else {
-              controls.start({ y: initialPosition });
+                controls.start({ y: initialPosition });
             }
 
             setPrevScrollY(currentScrollY);
@@ -59,7 +61,7 @@ export const Navbar = () => {
         boxShadow: scrolled ? '0px 0px 10px rgba(0, 0, 0, 0.1)' : 'none',
         transition: 'background-color 0.3s ease, box-shadow 0.3s ease',
     };
-    const initialPosition = scrolled ? -22 : +20;
+
     return (
         <>
             <nav className={styles.container}>
