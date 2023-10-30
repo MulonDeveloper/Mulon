@@ -286,6 +286,7 @@ h5 {
     padding: 15px;
     color: $white;
     background-color: $green;
+    height: 200px;
 
     p {
         text-align: center;
@@ -301,7 +302,7 @@ h5 {
     background-image: url('/asset/Background/TopBackground.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -100px;
+    background-position-y: -200px;
     height: 600px;
     width: 100%;
     display: grid;

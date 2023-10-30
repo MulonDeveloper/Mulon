@@ -28,13 +28,8 @@
     }
 
     .nestedUL {
-        position: absolute;
-        background-color: #549b79;
-        padding: 20px;
-        width: max-content;
-        top: 30px;
-        border-radius: 4px;
-        display: none;
+
+        // display: none;
 
     }
 
@@ -64,9 +59,102 @@
 
 }
 
-.active {
+
+.nestedUL {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #549b79;
+    padding: 10px;
+    width: max-content;
+    border-radius: 4px;
     display: block;
+
+
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #e5e5e5d8;
+    }
+
+    li {
+        font-size: 16px;
+        color: $white;
+        font-weight: 600;
+        font-family: $heading-family;
+        margin-top: 10px;
+    }
+
+    &__height {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+
+        // background-color: $green;
+        // border: solid 1px $green-dark;
+
+        background: rgb(84, 155, 121);
+        background: linear-gradient(189deg, rgba(84, 155, 121, 0.7176120448179272) 0%, rgba(31, 95, 91, 0.499124649859944) 100%);
+        border-radius: 6px;
+        padding: 20px;
+        margin: 2px;
+        justify-content: end;
+
+        img {
+            width: 70px;
+            height: 70px;
+
+        }
+    }
+
+    &__cardWidth {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        gap: 5px;
+    }
+
+    &__card {
+        cursor: pointer;
+        padding: 5px;
+        margin: 2px;
+        border-radius: 5px;
+        padding: 20px;
+
+        p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #e5e5e5d8;
+        }
+    }
 }
+
+
+.nestedUL__card:hover {
+    background: rgb(31, 95, 91);
+    background: linear-gradient(189deg, rgba(31, 95, 91, 0.2806372549019608) 0%, rgba(31, 95, 91, 0.2778361344537815) 100%);
+}
+
+.dontShow {
+    display: none;
+}
+
+.shoMenu {
+    display: inline;
+}
+
+.aboutMenus{
+
+}
+
 
 @media (max-width: 768px) {
     .navbar {
@@ -87,6 +175,7 @@
             background-color: #549b79;
             height: max-content;
             gap: 20px;
+
             li {
                 padding: 10px;
                 margin-left: 12px;
@@ -95,9 +184,10 @@
 
         }
 
-        .none{
+        .none {
             display: none;
         }
+
         .active {
             display: inline;
         }
@@ -114,6 +204,48 @@
             position: absolute;
             right: 30px;
             display: flex;
+        }
+    }
+
+    .dontShow {
+        display: none;
+    }
+    
+    .shoMenu {
+        display: inline;
+    }
+    
+
+    .nestedUL {
+
+        display: none;
+        &__wrap {
+            flex-direction: column;
+            width: 600px;
+        }
+
+        &__height {
+            flex-direction: column;
+            width: 600px;
+            height: max-content;
+        }
+
+        img {
+            display: none;
+        }
+
+        &__card {
+            width: 600px;
+            padding: 5px;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+
+        li {
+            margin-top: 5px;
+            margin-left: 0;
         }
     }
 }

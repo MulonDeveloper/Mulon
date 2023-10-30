@@ -1,14 +1,10 @@
+
 import Image from 'next/image'
 import CardServices from './components/CardServices'
 import { Footer } from './components/footers/footer'
 import Navbar from './components/navbar/Navbar'
 import Link from 'next/link'
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
+import CardsOne from './components/card/CardsOne'
 export default function Home() {
   return (
     <>
@@ -32,7 +28,7 @@ export default function Home() {
       </div>
 
       <div className="block">
-        <p className='bodyText'>Cara Baru Atasi Sampah Dengan Smart Waste Management Kami</p>
+        <CardsOne/>
       </div>
 
       <div className="about">
@@ -55,6 +51,23 @@ export default function Home() {
               height={450}
             />
           </div>
+        </div>
+      </div>
+
+
+      <div className="">
+        <div className="about__wrapper">
+          <div className="LContent">
+            <h1>Manfaat<span className='secondary'>Sekarang</span></h1>
+            <p className='bodyText '>
+              Dengan Layanan Smart Waste Management Kami, dapatkan berbagai manfaat
+            </p>
+            <CardServices title={"Hemat Biaya"} param={""} img={"truck"} />
+            <Link href='/home/about'>
+              <button className='primary_button'>Lihat Lebih Detail</button>
+            </Link>
+          </div>
+
         </div>
       </div>
 
