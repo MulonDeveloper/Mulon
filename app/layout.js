@@ -1,6 +1,6 @@
 import './styles/globals.styles.scss'
 import Navbars from './components/navbar/Navbars';
-import { Footer } from './components/footers/Footer'
+import { Footer } from './components/footers/Footer.jsx'
 
 export const metadata = {
   title: 'Mulon',

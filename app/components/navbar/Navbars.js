@@ -9,7 +9,7 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, useAnimation } from "framer-motion"
 import logoPutih from '../../../public/mulonPutih.svg';
-import logoHitam from '../../../public/mulonSamping.png';
+import logoHitam from '../../../public/MulonSamping.png';
 import { MenusAbout } from './MenusAbout';
 
 const Navbars = () => {
