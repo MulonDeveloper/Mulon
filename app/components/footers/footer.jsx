@@ -1,8 +1,10 @@
+"use client"
 import React from 'react'
 import styles from './style.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-export const Footer = () => {
+
+const FootersIndex = () => {
     return (
         <>
             <footer>
@@ -80,3 +82,7 @@ export const Footer = () => {
         </>
     )
 }
+
+export default FootersIndex
+
+
