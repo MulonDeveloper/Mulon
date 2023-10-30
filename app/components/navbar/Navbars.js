@@ -12,7 +12,7 @@ import logoPutih from '../../../public/mulonPutih.svg';
 import logoHitam from '../../../public/mulonSamping.png';
 import { MenusAbout } from './MenusAbout';
 
-const Navbar = () => {
+const Navbars = () => {
     const [scrolled, setScrolled] = useState(false);
     const [prevScrollY, setPrevScrollY] = useState(0);
     const controls = useAnimation();
@@ -169,4 +169,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Navbars;

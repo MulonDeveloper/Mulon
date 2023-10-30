@@ -1,15 +1,11 @@
 
 import Image from 'next/image'
 import CardServices from './components/CardServices'
-import { Footer } from './components/footers/footer'
-import Navbar from './components/navbar/Navbar'
 import Link from 'next/link'
 import CardsOne from './components/card/CardsOne'
 export default function Home() {
   return (
     <>
-
-      <Navbar />
       <div className='mainHero'>
         <div className="heroWrapper">
           <h1 className=' lh'>Solusi Modern Untuk Kupang Yang <span className='secondary'>Bersih</span></h1>
@@ -113,8 +109,6 @@ export default function Home() {
 
         <button className='primary_button'>Lihat Blog Kami</button>
       </div>
-
-      <Footer />
     </>
   )
 }

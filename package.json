@@ -14,11 +14,12 @@
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.284.0",
-    "next": "latest",
+    "next": "^14.0.0",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
     "react-responsive": "^9.0.2",
+    "request": "^2.88.2",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7"
   },

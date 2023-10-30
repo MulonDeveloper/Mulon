@@ -1,7 +1,6 @@
 import './styles/globals.styles.scss'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Navbars from './components/navbar/Navbars';
+import { Footer } from './components/footers/Footer'
 
 export const metadata = {
   title: 'Mulon',
@@ -11,7 +10,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <>
+          <Navbars />
+          {children}
+          <Footer />
+        </>
+      </body>
     </html>
   )
 }

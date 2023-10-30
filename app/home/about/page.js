@@ -1,20 +1,10 @@
 import React from 'react'
-import Navbar from '@/app/components/navbar/Navbar'
-import { Footer } from '@/app/components/footers/footer'
 import Image from 'next/image'
-import CardServices from '@/app/components/CardServices'
 import styles from './style.module.scss'
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion"
 
 const About = () => {
     return (
         <>
-            <Navbar />
             <div className={styles.about}>
                 <div className="about__wrapper">
                     <div className="LContent">
@@ -88,7 +78,6 @@ const About = () => {
                 </div>
                 <button className='primary_button'>Lihat Keseruan dan aktivitas kami</button>
             </div>
-            <Footer />
         </>
     )
 }

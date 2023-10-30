@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './style.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 export const Footer = () => {
     return (
         <>
@@ -20,7 +21,11 @@ export const Footer = () => {
                             <div className={styles.items}>
                                 <h5 className={styles.whiteColor}>Home</h5>
                                 <div className={styles.items__list}>
-                                    <p>Home</p>
+                                    <p>
+                                    <Link href={'/'}>
+                                        Home
+                                        </Link>
+                                        </p>
                                     <p>About Us</p>
                                     <p>Services</p>
                                 </div>
